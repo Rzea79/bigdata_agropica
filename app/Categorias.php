@@ -12,4 +12,9 @@ class Categorias extends Model
         'slug', 'title', 'description', 'nombre', 'descripcion', 'urlfoto', 'visitas', 'orden', 'portada',
     ];
 
+    public function subcategorias(){
+        return $this->hasMany("App\Subcategorias");
+    }
+
+
 }
